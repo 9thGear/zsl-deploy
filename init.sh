@@ -24,12 +24,12 @@ wget https://github.com/9thGear/zsl-deploy/releases/download/binaries-v0.1.6/wno
 echo "[*] Copied the pre-compiled binaries"
 
 echo "[*] Getting the Quorum ZSL Parameters..."
-wget https://github.com/jpmorganchase/zsl-q-params/releases/download/v0.3/shielding.pk
-wget https://github.com/jpmorganchase/zsl-q-params/releases/download/v0.3/shielding.vk 
-wget https://github.com/jpmorganchase/zsl-q-params/releases/download/v0.3/transfer.pk
-wget https://github.com/jpmorganchase/zsl-q-params/releases/download/v0.3/transfer.vk 
-wget https://github.com/jpmorganchase/zsl-q-params/releases/download/v0.3/unshielding.pk
-wget https://github.com/jpmorganchase/zsl-q-params/releases/download/v0.3/unshielding.vk
+wget https://github.com/9thGear/zsl-q-params/releases/download/parameters-v0.3/shielding.pk
+wget https://github.com/9thGear/zsl-q-params/releases/download/parameters-v0.3/shielding.vk 
+wget https://github.com/9thGear/zsl-q-params/releases/download/parameters-v0.3/transfer.pk
+wget https://github.com/9thGear/zsl-q-params/releases/download/parameters-v0.3/transfer.vk 
+wget https://github.com/9thGear/zsl-q-params/releases/download/parameters-v0.3/unshielding.pk
+wget https://github.com/9thGear/zsl-q-params/releases/download/parameters-v0.3/unshielding.vk
 echo "[*] Got the Quorum ZSL Parameters"
 
 echo "[*] SETUP SCRIPT COMPLETED"
