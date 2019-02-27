@@ -3,25 +3,6 @@
 set -u
 set -e
 
-ZSL_DEPLOY_BRANCH = "minimal-node-setup"
-
-while getopts ":b:" opt; do
-  case $opt in
-    b)
-      echo "Will try to pull down zsl-deploy branch: $OPTARG" >&2
-      ZSL_DEPLOY_BRANCH = $OPTARG
-      ;;
-    \?)
-      echo "Invalid option: -$OPTARG" >&2
-      exit 1
-      ;;
-    :)
-      echo "Option -$OPTARG requires a branch name" >&2
-      exit 1
-      ;;
-  esac
-done
-
 echo "[*] Installing Build Dependencies..."
 sudo add-apt-repository -y ppa:ethereum/ethereum
 sudo apt-get update
@@ -41,15 +22,6 @@ wget https://github.com/9thGear/zsl-deploy/releases/download/binaries-v0.1.6/rlp
 wget https://github.com/9thGear/zsl-deploy/releases/download/binaries-v0.1.6/swarm && sudo mv swarm /usr/local/bin
 wget https://github.com/9thGear/zsl-deploy/releases/download/binaries-v0.1.6/wnode && sudo mv wnode /usr/local/bin
 echo "[*] Copied the pre-compiled binaries"
-
-echo "[*] Cloning the zsl-deploy branch: $ZSL_DEPLOY_BRANCH..."
-{ # try
-    git clone -b $ZSL_DEPLOY_BRANCH --single-branch https://github.com/9thGear/zsl-deploy.git && cd zsl-deploy
-    echo "[*] Cloned the zsl-deploy branch: $ZSL_DEPLOY_BRANCH"
-} || { # catch
-    git clone -b minimal-node-setup --single-branch https://github.com/9thGear/zsl-deploy.git && cd zsl-deploy
-    echo "[*] Defaulted to cloning the zsl-deploy branch: minimal-node-setup"
-}
 
 echo "[*] Getting the Quorum ZSL Parameters..."
 wget https://github.com/jpmorganchase/zsl-q-params/releases/download/v0.3/shielding.pk
