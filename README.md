@@ -37,15 +37,20 @@ This will install the needed packages, [precompiled-binaries](https://github.com
 
 ## Updating `genesis` JSON file
 
+TBD
 
 ## Generating Keys
 
+TBD
 
 ## Updating `password` TXT file
 
+TBD
 
 ## Updating `static-nodes` JSON file
 
+TBD
 
 ## Updating `tm` CONF file
 
+TBD
