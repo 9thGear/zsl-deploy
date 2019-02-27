@@ -9,3 +9,11 @@ There are still a few requirements needed in order to boot a node using this tem
 - Updating `passwords.txt`
 - Updating `static-nodes.json`
 - Updating `tm.conf`
+
+## Getting Started
+
+Clone this branch to a Ubuntu 16.04 machine with:
+
+```bash
+git clone -b minimal-node-setup --single-branch https://github.com/9thGear/zsl-deploy.git
+```
