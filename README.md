@@ -10,6 +10,15 @@ There are still a few requirements needed in order to boot a node using this tem
 - Updating `static-nodes.json`
 - Updating `tm.conf`
 
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Updating `genesis` JSON file](#updating-genesis-json-file)
+- [Generating Keys](#generating-keys)
+- [Updating `password` TXT file](#updating-password-txt-file)
+- [Updating `static-nodes` JSON file](#updating-static-nodes-json-file)
+- [Updating `tm` CONF file](#updating-tm-conf-file)
+
 ## Getting Started
 
 1. Clone this branch to an Ubuntu 16.04 machine with:
@@ -25,3 +34,18 @@ chmod +x init.sh && ./init.sh
 ```
 
 This will install the needed packages, [precompiled-binaries](https://github.com/9thGear/zsl-deploy/releases/tag/binaries-v0.1.6), and [Quorum ZSL Parameters](https://github.com/jpmorganchase/zsl-q-params/releases/tag/v0.3)
+
+## Updating `genesis` JSON file
+
+
+## Generating Keys
+
+
+## Updating `password` TXT file
+
+
+## Updating `static-nodes` JSON file
+
+
+## Updating `tm` CONF file
+
