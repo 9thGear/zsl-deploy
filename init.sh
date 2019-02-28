@@ -27,9 +27,9 @@ echo "[*] Getting the Quorum ZSL Parameters..."
 wget https://github.com/9thGear/zsl-deploy/releases/download/parameters-v0.3/shielding.pk && mv ./shielding.pk ./node1
 wget https://github.com/9thGear/zsl-deploy/releases/download/parameters-v0.3/shielding.vk && mv ./shielding.vk ./node1
 wget https://github.com/9thGear/zsl-deploy/releases/download/parameters-v0.3/transfer.pk && mv ./transfer.pk ./node1
-wget https://github.com/9thGear/zsl-deploy/releases/download/parameters-v0.3/transfer.vk && transfer.vk ./node1
-wget https://github.com/9thGear/zsl-deploy/releases/download/parameters-v0.3/unshielding.pk && ./unshielding.pk ./node1
-wget https://github.com/9thGear/zsl-deploy/releases/download/parameters-v0.3/unshielding.vk && ./unshielding.vk ./node1
+wget https://github.com/9thGear/zsl-deploy/releases/download/parameters-v0.3/transfer.vk && mv transfer.vk ./node1
+wget https://github.com/9thGear/zsl-deploy/releases/download/parameters-v0.3/unshielding.pk && mv ./unshielding.pk ./node1
+wget https://github.com/9thGear/zsl-deploy/releases/download/parameters-v0.3/unshielding.vk && mv ./unshielding.vk ./node1
 echo "[*] Got the Quorum ZSL Parameters"
 
 echo "[*] SETUP SCRIPT COMPLETED"
