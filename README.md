@@ -5,6 +5,7 @@ The [node](https://github.com/9thGear/zsl-deploy/tree/7node-1-setup/node1) direc
 ## Table of Content
 
 - [Getting Started](#getting-started)
+- [Starting Node 1](#starting-node-1)
 
 ## Getting Started
 
@@ -23,4 +24,12 @@ git clone -b 7node-1-setup --single-branch https://github.com/9thGear/zsl-deploy
 ```
 
 This will install the needed packages, [precompiled-binaries](https://github.com/9thGear/zsl-deploy/releases/tag/binaries-v0.1.6), and [Quorum ZSL Parameters](https://github.com/jpmorganchase/zsl-q-params/releases/tag/v0.3)
+
+## Starting Node 1
+
+1. Run the `start.sh` script:
+
+```bash
+./start.sh
+```
 
