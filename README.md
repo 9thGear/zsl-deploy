@@ -5,7 +5,7 @@ The [node](https://github.com/9thGear/zsl-deploy/tree/7node-1-setup/node1) direc
 ## Table of Content
 
 - [Getting Started](#getting-started)
-- [Starting Node 1](#starting-node-2)
+- [Starting Node 2](#starting-node-2)
 
 ## Getting Started
 
