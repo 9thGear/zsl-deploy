@@ -8,7 +8,7 @@ BOOTNODE_ENODE=enode://61077a284f5ba7607ab04f33cfde2750d659ad9af962516e159cf6ce7
 GLOBAL_ARGS="--bootnodes $BOOTNODE_ENODE --networkid $NETID --rpc --rpcaddr 0.0.0.0 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum"
 
 echo "[*] Starting Constellation nodes"
-nohup constellation-node tm1.conf 2>> qdata/logs/constellation1.log &
+nohup constellation-node tm2.conf 2>> qdata/logs/constellation2.log &
 sleep 30
 
 echo "[*] Starting bootnode"
@@ -16,12 +16,12 @@ nohup bootnode --nodekeyhex "$BOOTNODE_KEYHEX" --addr="127.0.0.1:33445" 2>>qdata
 echo "wait for bootnode to start..."
 sleep 6
 
-echo "[*] Starting node 1"
-PRIVATE_CONFIG=tm1.conf nohup geth --datadir qdata/dd1 $GLOBAL_ARGS --rpcport 22000 --port 21000 --unlock 0 --password passwords.txt 2>>qdata/logs/1.log &
+echo "[*] Starting node 2"
+PRIVATE_CONFIG=tm2.conf nohup geth --datadir qdata/dd2 $GLOBAL_ARGS --rpcport 22000 --port 21000 --unlock 0 --password passwords.txt 2>>qdata/logs/2.log &
 
 echo "[*] Waiting for nodes to start"
 sleep 10
 echo "[*] Sending first transaction"
-PRIVATE_CONFIG=tm1.conf geth --exec 'loadScript("script1.js")' attach ipc:qdata/dd1/geth.ipc
+PRIVATE_CONFIG=tm2.conf geth --exec 'loadScript("script1.js")' attach ipc:qdata/dd2/geth.ipc
 
-echo "All nodes configured. See 'qdata/logs' for logs, and run e.g. 'geth attach qdata/dd1/geth.ipc' to attach to the first Geth node"
+echo "All nodes configured. See 'qdata/logs' for logs, and run e.g. 'geth attach qdata/dd2/geth.ipc' to attach to the first Geth node"
