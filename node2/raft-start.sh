@@ -12,7 +12,7 @@ sleep 30
 echo "[*] Constellation node should be up"
 
 echo "[*] Starting Geth node..."
-PRIVATE_CONFIG=tm2.conf nohup geth --datadir qdata/dd2 $GLOBAL_ARGS --raftport 50401 --rpcport 22000 --port 21000 --unlock 0 --password passwords.txt 2>>qdata/logs/2.log &
+PRIVATE_CONFIG=tm2.conf nohup geth --datadir qdata/dd2 $GLOBAL_ARGS --raftjoinexisting 2 --raftport 50401 --rpcport 22000 --port 21000 --unlock 0 --password passwords.txt 2>>qdata/logs/2.log &
 
 sleep 30
 
