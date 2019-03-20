@@ -3,7 +3,7 @@
 set -u
 set -e
 
-cd ./node2
+cd ./node3
 
 echo "[*] Running raft-init.sh..."
 ./raft-init.sh
