@@ -25,6 +25,12 @@ git clone -b 7node-1-setup --single-branch https://github.com/9thGear/zsl-deploy
 
 This will install the needed packages, [precompiled-binaries](https://github.com/9thGear/zsl-deploy/releases/tag/binaries-v0.1.6), and [Quorum ZSL Parameters](https://github.com/jpmorganchase/zsl-q-params/releases/tag/v0.3)
 
+4. Update `tm1.conf` File to Use the Node's IP Address
+
+`vim ./node1/tm1.conf`
+
+Update line 2: `url = "http://127.0.0.1:9000/"` to use your node's IP address instead of `127.0.0.1`
+
 ## Starting Node 1
 
 1. Run the `start.sh` script:
