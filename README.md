@@ -25,7 +25,7 @@ git clone -b 7node-2-setup --single-branch https://github.com/9thGear/zsl-deploy
 
 4. Update `static-nodes.json` File to Use Node 1's IP Address
 
-Update `["enode://...@127.0.0.1:2100..."] to use node 1's IP address instead of `127.0.0.1`
+Update `["enode://...@127.0.0.1:2100..."]` to use node 1's IP address instead of `127.0.0.1`
 
 5. Update `tm2.conf` File to Use the Node's IP Address and Node 1's IP Address
 
