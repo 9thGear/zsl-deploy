@@ -32,7 +32,7 @@ Update `["enode://...@127.0.0.1:2100..."]` to use node 1's IP address instead of
 
 5. Update `tm4.conf` File to Use the Node's IP Address and Node 1's IP Address
 
-`vim ./node3/tm4.conf`
+`vim ./node4/tm4.conf`
 
 Update line 2: `url = "http://127.0.0.1:9000/"` to use your node's IP address instead of `127.0.0.1`
 
